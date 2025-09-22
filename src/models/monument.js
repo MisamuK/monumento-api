@@ -106,4 +106,13 @@ module.exports = (sequelize, DataTypes) => {
     }
 
   });
+
+  Monument.associate = (models) => {
+  Monument.belongsToMany(models.User, {
+    through: models.Favorite,
+    foreignKey: 'monumentId',
+    as: 'usersWhoFavorited'
+  });
+};
+
 }

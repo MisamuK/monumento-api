@@ -1,1 +1,21 @@
 node_modules
+
+# Node.js
+node_modules/
+.env
+
+# Logs
+logs/
+*.log
+
+# JWT keys
+src/auth/jwtRS256.key
+src/auth/jwtRS256.key.pub
+
+# DB local
+*.sqlite
+*.db
+
+# OS / IDE
+.DS_Store
+.vscode/

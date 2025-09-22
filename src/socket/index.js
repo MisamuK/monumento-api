@@ -3,6 +3,7 @@ const fs = require('fs');
 const publicKey = fs.readFileSync('./src/auth/jwtRS256.key.pub');
 const { Server } = require('socket.io');
 
+
 let messages = {};
 
 function setupSocketServer(server) {
